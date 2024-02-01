@@ -154,7 +154,7 @@ def contact_details(context, contact_list_details_cache):
             "__v": contact["__v"]
         }
         resource_details.append(details)
-    if len(contact) == 0:
+    if len(resource_details) == 0:
       logging.info(f"No contact found")
       raise(Exception("Missing contacts"))
     else:
